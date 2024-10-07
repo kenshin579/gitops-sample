@@ -1,6 +1,6 @@
 REGISTRY 	:= kenshin579
 APP    		:= go-server
-IMAGE       := $(REGISTRY)/$(APP):v1.0
+IMAGE       := $(REGISTRY)/$(APP):v1.1
 
 .PHONY: docker-build
 docker-build:
