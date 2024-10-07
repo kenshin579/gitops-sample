@@ -1,3 +1,3 @@
-module github.com/RinkiyaKeDad/gitops-sample
+module github.com/kenshin579/gitops-sample
 
-go 1.21.1
+go 1.23
