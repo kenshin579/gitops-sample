@@ -8,7 +8,7 @@ spec:
     namespace: 'prod'
   source:
     path: 'chart'
-    repoURL: 'https://github.com/RinkiyaKeDad/gitops-sample'
+    repoURL: 'https://github.com/kenshin579/gitops-sample'
     targetRevision: HEAD
     helm:
       valueFiles:

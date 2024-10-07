@@ -1,12 +1,11 @@
 name: Argo CD GitOps CI/CD
 
-on:
-  push:
-    branches:
-    - main
-    paths:
-    - 'main.go'
-
+#on:
+#  push:
+#    branches:
+#    - main
+#    paths:
+#    - 'main.go'
 
 jobs:
   build:
@@ -27,7 +26,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: rinkiyakedad/go-server:${{ github.sha }} , rinkiyakedad/go-server:latest
+        tags: kenshin579/go-server:${{ github.sha }} , kenshin579/go-server:latest
 
   update:
     name: Update Helm Manifests
@@ -48,7 +47,6 @@ jobs:
     
     - name: Commit the changes made
       run: | 
-        git config --global user.name 'Arsh Sharma'
-        git config --global user.email 'arshsharma461@gmail.com'
+        git config --global user.name 'Frank Oh'
         git commit -am "updating image tag"
         git push
